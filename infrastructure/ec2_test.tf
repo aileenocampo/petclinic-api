@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-west-1"
+  region = "us-west-2"
 }
 
 resource "aws_security_group" "web_security_group" {
