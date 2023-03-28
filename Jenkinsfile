@@ -201,17 +201,7 @@ pipeline
       }
 
       }
-     post {
-      failure {
-          mail to: "aileen2498o@gmail.com",
-             subject: "${env.JOB_NAME} - Build # ${env.BUILD_NUMBER} - Failed", 
-             body: "${currentBuild.currentResult}: Job ${env.JOB_NAME}\nMore Info can be found here: ${env.BUILD_URL}"
-      }
-      success {
-          mail to: "aileen2498o@gmail.com",
-             subject: "${env.JOB_NAME} - Build # ${env.BUILD_NUMBER} - Success", 
-             body: "${currentBuild.currentResult}: Job ${env.JOB_NAME}\nMore Info can be found here: ${env.BUILD_URL}"
-      }     
+
 
   }
 
